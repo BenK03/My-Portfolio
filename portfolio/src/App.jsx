@@ -1,4 +1,5 @@
 import React from "react";
+import ClickSpark from "./components/ClickSpark";
 import shanksGif from "../images/shanks.gif";
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0b0d11] text-slate-100">
-      <main className="relative flex items-start justify-center gap-12 py-28 px-6">
+      <ClickSpark sparkColor="#fff" sparkSize={8} sparkRadius={14} sparkCount={10} duration={420}>
+        <main className="relative flex items-start justify-center gap-12 py-28 px-6">
         <div className="relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">
             Benjamin Kim
@@ -126,7 +128,8 @@ export default function App() {
             </a>
           </div>
         </div>
-      </main>
+        </main>
+      </ClickSpark>
     </div>
   );
 }
