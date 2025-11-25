@@ -26,10 +26,10 @@ export default function App() {
       <main className="relative flex items-start justify-center gap-12 py-24 px-6">
         <div className="relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">
-            Benjamin Kim  
+            Benjamin Kim
           </h1>
           <div className="shanks">
-            <img src={shanksGif} alt="Madara"/>
+            <img src={shanksGif} alt="Madara" />
           </div>
           <p className="right text-xs text-inherit sm:text-sm leading-tight">
             Hello! I'm a third year computer science student.
@@ -38,9 +38,7 @@ export default function App() {
             Experiences:
           </h2>
           <div className="mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
-            <p className="right text-xs font-medium sm:text-sm">
-              Korea University
-            </p>
+            <p className="right text-xs font-medium sm:text-sm">Korea University</p>
             <p className="dates ml-auto pr-16 text-xs font-medium text-slate-500 sm:pr-24 sm:text-sm translate-x-80 sm:translate-x-96">
               May 2025 - Sept 2025
             </p>
@@ -48,10 +46,8 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             Machine Learning Researcher Intern
           </p>
-          <div className="mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
-            <p className="right text-xs font-medium sm:text-sm">
-              Chujin Gongjang Corp.
-            </p>
+          <div className="mt-4 flex w/full max-w-[1400px] items-center justify-between gap-12">
+            <p className="right text-xs font-medium sm:text-sm">Chujin Gongjang Corp.</p>
             <p className="dates ml-auto pr-16 text-xs font-medium text-slate-500 sm:pr-24 sm:text-sm translate-x-80 sm:translate-x-96">
               May 2025 - Aug 2025
             </p>
@@ -62,10 +58,8 @@ export default function App() {
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Projects:
           </h2>
-          <div className="mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
-            <p className="right text-xs font-medium sm:text-sm">
-              Heart Disease Predictor
-            </p>
+          <div className="mt-4 flex w/full max-w-[1400px] items-center justify-between gap-12">
+            <p className="right text-xs font-medium sm:text-sm">Heart Disease Predictor</p>
             <p className="dates ml-auto pr-16 text-xs font-medium text-slate-500 sm:pr-24 sm:text-sm translate-x-80 sm:translate-x-96">
               Jan 2024 - Jan 2024
             </p>
@@ -73,10 +67,8 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             AI-Powered Heart Disease Predictor
           </p>
-          <div className="mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
-            <p className="right text-xs font-medium sm:text-sm">
-              GameHub
-            </p>
+          <div className="mt-4 flex w/full max-w-[1400px] items-center justify-between gap-12">
+            <p className="right text-xs font-medium sm:text-sm">GameHub</p>
             <p className="dates ml-auto pr-16 text-xs font-medium text-slate-500 sm:pr-24 sm:text-sm translate-x-80 sm:translate-x-96">
               Oct 2025 - Nov 2025
             </p>
