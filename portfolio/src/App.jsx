@@ -99,6 +99,9 @@ export default function App() {
               ))}
             </div>
           </div>
+          <h2 className="right mt-14 text-lg font-semibold tracking-tight sm:text-xl">
+            Connect:
+          </h2>
         </div>
       </main>
     </div>

@@ -32,6 +32,7 @@ body {
 .skills-track {
   display: flex;
   gap: 1.25rem;
+  padding-top: 10px;
   width: max-content;
   animation: skills-marquee 18s linear infinite;
 }
@@ -43,15 +44,4 @@ body {
   100% {
     transform: translateX(-50%);
   }
-}
-
-.skills-marquee {
-  position: absolute;
-}
-
-.skills-track {
-  position: relative;
-  padding-left: 800px;
-  padding-top: 10px;
-  margin: 0 auto;
 }
