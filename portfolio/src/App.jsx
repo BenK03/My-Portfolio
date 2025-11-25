@@ -32,7 +32,7 @@ export default function App() {
             <img src={shanksGif} alt="Madara" />
           </div>
           <p className="right text-xs text-inherit sm:text-sm leading-tight">
-            Hello! I'm a third year computer science student.
+            Hello! I'm a Third Year Computer Science Student.
           </p>
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Experiences:
