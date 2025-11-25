@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0b0d11] text-slate-100">
-      <main className="relative flex items-start justify-center gap-12 py-24 px-6">
+      <main className="relative flex items-start justify-center gap-12 py-28 px-6">
         <div className="relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">
             Benjamin Kim
