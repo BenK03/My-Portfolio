@@ -4,17 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
-/* Smooth transitions for theme */
-*,
-*::before,
-*::after {
-  @apply transition-colors duration-200;
-}
-
 body {
   background-color: #0b0d11;
   color: #e2e8f0;
@@ -22,126 +11,47 @@ body {
   font-family: "Roboto Serif", ui-serif, Georgia, "Times New Roman", serif;
 }
 
-/* Minimal scrollbar tweak */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: #475569;
-  border-radius: 999px;
-}
-
-/* Click spark particle */
-.spark {
+.shanks {
   position: fixed;
-  pointer-events: none;
-  border-radius: 999px;
-  background: radial-gradient(circle at center, #22c55e, transparent 70%);
-  width: 14px;
-  height: 14px;
-  opacity: 0.9;
-  transform: translate(-50%, -50%);
-  animation: spark-fade 550ms ease-out forwards;
+  width: 1200px;
+  padding-left: 850px;
+  top: -160px;
 }
 
-@keyframes spark-fade {
+.dates {
+  position: absolute;
+  padding-left: 530px;
+}
+
+.right {
+  position: relative;
+  padding-left: 250px;
+}
+
+/* Skills carousel */
+.skills-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: skills-marquee 18s linear infinite;
+}
+
+@keyframes skills-marquee {
   0% {
-    opacity: 0.95;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(0);
   }
   100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(3.5);
+    transform: translateX(-50%);
   }
 }
 
-/* Star-border card */
-.star-border {
-  position: relative;
-  border-radius: 1.5rem;
-  padding: 1px;
-  background:
-    radial-gradient(circle at 0 0, #22c55e55, transparent 55%),
-    radial-gradient(circle at 100% 0, #38bdf855, transparent 55%),
-    radial-gradient(circle at 0 100%, #f9731655, transparent 55%),
-    radial-gradient(circle at 100% 100%, #eab30855, transparent 55%),
-    linear-gradient(135deg, #0f172a, #020617);
-}
-
-.star-border-inner {
-  border-radius: 1.4rem;
-  background: rgba(15, 23, 42, 0.96);
-}
-
-/* Ribbon label */
-.ribbon {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.3rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  background: linear-gradient(
-    135deg,
-    rgba(34, 197, 94, 0.14),
-    rgba(56, 189, 248, 0.06)
-  );
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  backdrop-filter: blur(20px);
-}
-
-/* Magic-bento */
-.magic-bento {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-auto-rows: minmax(120px, auto);
-  gap: 1rem;
-}
-
-@media (max-width: 1024px) {
-  .magic-bento {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 640px) {
-  .magic-bento {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-/* Glare hover */
-.glare-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.glare-card::before {
-  content: "";
+.skills-marquee {
   position: absolute;
-  inset: -40%;
-  background: conic-gradient(
-    from 180deg,
-    rgba(248, 250, 252, 0.06),
-    rgba(148, 163, 184, 0.04),
-    rgba(34, 197, 94, 0.12),
-    rgba(148, 163, 184, 0.04),
-    rgba(248, 250, 252, 0.06)
-  );
-  opacity: 0;
-  transform: translate3d(-20%, -20%, 0) rotate(8deg);
-  transition: opacity 300ms ease, transform 550ms ease-out;
 }
 
-.glare-card:hover::before {
-  opacity: 1;
-  transform: translate3d(0, 0, 0) rotate(0deg);
-}
-
-/* Gradual blur background blobs */
-.blur-blob {
-  display: none;
+.skills-track {
+  position: relative;
+  padding-left: 800px;
+  padding-top: 10px;
+  margin: 0 auto;
 }
