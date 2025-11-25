@@ -28,6 +28,11 @@ body {
   padding-left: 250px;
 }
 
+.find {
+  position: relative;
+  padding-left: 485px;
+}
+
 /* Skills carousel */
 .skills-track {
   display: flex;

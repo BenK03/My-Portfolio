@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0b0d11] text-slate-100">
-      <main className="relative flex items-start justify-center gap-12 py-16 px-6">
+      <main className="relative flex items-start justify-center gap-12 py-24 px-6">
         <div className="relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">
             Benjamin Kim  
@@ -99,9 +99,40 @@ export default function App() {
               ))}
             </div>
           </div>
-          <h2 className="right mt-14 text-lg font-semibold tracking-tight sm:text-xl">
-            Connect:
+          <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
+            Find Me:
           </h2>
+          <div className="find mt-4 flex items-center gap-16 sm:gap-24">
+            <a
+              href="https://www.linkedin.com/in/benjamin-kim-656307254/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.svgrepo.com/show/157006/linkedin.svg"
+                alt="LinkedIn"
+                className="h-10 w-10 sm:h-12 sm:w-12"
+              />
+            </a>
+            <a href="mailto:03benjamin.kim@gmail.com">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+                alt="Gmail"
+                className="h-10 w-10 sm:h-12 sm:w-12"
+              />
+            </a>
+            <a
+              href="https://github.com/BenK03"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.svgrepo.com/show/475654/github-color.svg"
+                alt="GitHub"
+                className="h-10 w-10 sm:h-12 sm:w-12"
+              />
+            </a>
+          </div>
         </div>
       </main>
     </div>
