@@ -1,4 +1,4 @@
-My Portfolio, check it out! -> Add link here when done
+My Portfolio, check it out! -> www.benkim.me
 
 Created with React, Tailwind, and Vite
 
