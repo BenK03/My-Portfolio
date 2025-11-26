@@ -47,19 +47,21 @@ export default function App() {
             <span className={`block h-0.5 w-6 rounded transition group-hover:scale-x-95 ${isDark ? "bg-slate-100" : "bg-slate-800"}`} />
             <span className={`block h-0.5 w-6 rounded transition group-hover:scale-x-95 ${isDark ? "bg-slate-100" : "bg-slate-800"}`} />
           </button>
-          {menuOpen && (
-            <div className="absolute left-full top-1/2 ml-3 w-40 -translate-y-1/2 transform">
-              <a
-                href={resumePdf}
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setMenuOpen(false)}
-                className={`block rounded-lg px-4 py-3 text-sm font-semibold transition ${isDark ? "text-slate-100 hover:bg-slate-800/60" : "text-slate-900 hover:bg-slate-200/60"}`}
-              >
-                Resume
-              </a>
-            </div>
-          )}
+          <div
+            className={`menu-slide absolute left-full top-1/2 ml-3 w-40 ${menuOpen ? "menu-open" : "menu-closed"}`}
+            aria-hidden={!menuOpen}
+          >
+            <a
+              href={resumePdf}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+              tabIndex={menuOpen ? 0 : -1}
+              className={`block rounded-lg px-4 py-3 text-sm font-semibold transition ${isDark ? "text-slate-100 hover:bg-slate-800/60" : "text-slate-900 hover:bg-slate-200/60"}`}
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
       <div className="absolute right-4 top-4 z-50 sm:right-6 sm:top-6">
@@ -99,7 +101,13 @@ export default function App() {
           )}
         </button>
       </div>
-      <ClickSpark sparkColor="#fff" sparkSize={8} sparkRadius={14} sparkCount={10} duration={420}>
+      <ClickSpark
+        sparkColor={isDark ? "#fff" : "#000"}
+        sparkSize={8}
+        sparkRadius={14}
+        sparkCount={10}
+        duration={420}
+      >
         <main className="page-layout relative flex items-start justify-center gap-12 py-28 px-6">
         <div className="content-block relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">

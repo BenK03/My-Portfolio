@@ -11,6 +11,48 @@ body {
   font-family: "Roboto Serif", ui-serif, Georgia, "Times New Roman", serif;
 }
 
+.menu-slide {
+  transform: translate(-12px, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 180ms ease, opacity 160ms ease;
+  display: block;
+}
+
+.menu-open {
+  transform: translate(0, -50%);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-closed {
+  transform: translate(-12px, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 922px) {
+  .menu-slide {
+    left: 100%;
+    margin-left: 0.35rem;
+    width: auto;
+    min-width: 7.5rem;
+  }
+
+  .menu-slide a {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+.menu-slide a {
+  display: block;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  text-align: center;
+}
+
 .shanks {
   position: fixed;
   width: 1200px;
