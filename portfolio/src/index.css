@@ -19,8 +19,8 @@ body {
 }
 
 .dates {
-  position: absolute;
-  padding-left: 530px;
+  min-width: 190px;
+  text-align: right;
 }
 
 .right {
