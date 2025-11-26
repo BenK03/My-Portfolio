@@ -136,15 +136,6 @@ export default function App() {
             Projects:
           </h2>
           <div className="section-row mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
-            <p className="right text-xs font-medium sm:text-sm">Heart Disease Predictor</p>
-            <p className="dates ml-auto text-xs font-medium text-slate-500 sm:text-sm">
-              Jan 2024 - Jan 2024
-            </p>
-          </div>
-          <p className="right text-xs font-medium text-slate-500 sm:text-sm">
-            AI-Powered Heart Disease Predictor
-          </p>
-          <div className="section-row mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
             <p className="right text-xs font-medium sm:text-sm">GameHub</p>
             <p className="dates ml-auto text-xs font-medium text-slate-500 sm:text-sm">
               Oct 2025 - Nov 2025
@@ -152,6 +143,15 @@ export default function App() {
           </div>
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             Multiplayer Gaming Platform
+          </p>
+          <div className="section-row mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
+            <p className="right text-xs font-medium sm:text-sm">Heart Disease Predictor</p>
+            <p className="dates ml-auto text-xs font-medium text-slate-500 sm:text-sm">
+              Jan 2024 - Jan 2024
+            </p>
+          </div>
+          <p className="right text-xs font-medium text-slate-500 sm:text-sm">
+            AI-Powered Heart Disease Predictor
           </p>
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Skills:
