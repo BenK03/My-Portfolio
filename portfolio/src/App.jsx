@@ -1,5 +1,6 @@
 import React from "react";
 import ClickSpark from "./components/ClickSpark";
+import Magnet from "./components/Magnet";
 import shanksGif from "../images/shanks.gif";
 import resumePdf from "../resume/Resume.pdf";
 
@@ -171,35 +172,41 @@ export default function App() {
             Find Me:
           </h2>
           <div className="find mt-4 flex items-center gap-16 sm:gap-24">
-            <a
-              href="https://www.linkedin.com/in/benjamin-kim-656307254/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://www.svgrepo.com/show/157006/linkedin.svg"
-                alt="LinkedIn"
-                className="h-10 w-10 sm:h-12 sm:w-12"
-              />
-            </a>
-            <a href="mailto:03benjamin.kim@gmail.com">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
-                alt="Gmail"
-                className="h-10 w-10 sm:h-12 sm:w-12"
-              />
-            </a>
-            <a
-              href="https://github.com/BenK03"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://www.svgrepo.com/show/475654/github-color.svg"
-                alt="GitHub"
-                className="h-10 w-10 sm:h-12 sm:w-12"
-              />
-            </a>
+            <Magnet padding={50} magnetStrength={3}>
+              <a
+                href="https://www.linkedin.com/in/benjamin-kim-656307254/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://www.svgrepo.com/show/157006/linkedin.svg"
+                  alt="LinkedIn"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
+                />
+              </a>
+            </Magnet>
+            <Magnet padding={50} magnetStrength={3}>
+              <a href="mailto:03benjamin.kim@gmail.com">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+                  alt="Gmail"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
+                />
+              </a>
+            </Magnet>
+            <Magnet padding={50} magnetStrength={3}>
+              <a
+                href="https://github.com/BenK03"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://www.svgrepo.com/show/475654/github-color.svg"
+                  alt="GitHub"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
+                />
+              </a>
+            </Magnet>
           </div>
         </div>
         </main>
