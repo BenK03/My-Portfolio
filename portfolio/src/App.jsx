@@ -23,7 +23,7 @@ export default function App() {
     { name: "Vite", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" },
   ];
 
-  const skillsLoop = [...skillIcons, ...skillIcons];
+  const skillsLoop = [...skillIcons, ...skillIcons, ...skillIcons];
   const [menuOpen, setMenuOpen] = React.useState(false);
   const isDark = theme === "dark";
 
