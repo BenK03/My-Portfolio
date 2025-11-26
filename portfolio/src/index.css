@@ -202,12 +202,17 @@ body {
   }
 
   .find {
-    padding-left: 580px;
+    padding-left: 520px;
   }
 
   .skills-wrapper {
     margin-left: 250px !important;
-    max-width: 1000px;
-    padding-right: 12rem;
+    max-width: 880px;
+    padding-right: 0;
+  }
+
+  .section-row {
+    max-width: 1130px;
+    width: 100%;
   }
 }
