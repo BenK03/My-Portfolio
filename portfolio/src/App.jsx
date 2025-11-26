@@ -111,13 +111,17 @@ export default function App() {
         <main className="page-layout relative flex items-start justify-center gap-12 py-28 px-6">
         <div className="content-block relative -translate-x-28 sm:-translate-x-36 flex flex-col items-start gap-1 text-left">
           <h1 className="right text-lg font-medium tracking-tight sm:text-xl leading-tight">
-            Benjamin Kim
+            Benjamin Kim | 📍 Toronto, Canada
           </h1>
           <div className="shanks">
             <img src={shanksGif} alt="Madara" />
           </div>
-          <p className="right text-xs text-inherit sm:text-sm leading-tight">
-            Hello! I'm a Third Year Computer Science Student 💻
+          <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
+            Summary:
+          </h2>
+          <p className="right mt-4 text-xs text-inherit sm:text-sm leading-tight ">
+            Hello and welcome! I'm a 3rd Year Computer Science Student @ Wilfrid Laurier University specializing in Big Data Systems.
+            <p>I love to build things that solve real problems for real people and challenges that push my skill set to the next level. </p>
           </p>
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Experiences:
@@ -131,6 +135,17 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             Machine Learning Researcher Intern
           </p>
+          <div className="right mt-0 flex flex-wrap gap-2 sm:gap-3 ml-skills">
+            {["Pandas", "ETL", "LLM", "PyTorch"].map((skill) => (
+              <span
+                key={skill}
+                className={`inline-flex items-center justify-center rounded-md border px-2.5 py-1 text-[10px] font-semibold sm:text-[11px] text-slate-500 ${isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-300 bg-white"}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+
           <div className="section-row mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
             <p className="right text-xs font-medium sm:text-sm">Chujin Gongjang Corp.</p>
             <p className="dates ml-auto text-xs font-medium text-slate-500 sm:text-sm">
@@ -140,6 +155,16 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             Full-Stack Developer Intern
           </p>
+          <div className="right mt-0 flex flex-wrap gap-2 sm:gap-3 ml-skills">
+            {["Python", "Flask", "REST APIs", "SQL", "JavaScript", "HTML", "CSS", "Git", "Docker"].map((skill) => (
+              <span
+                key={skill}
+                className={`inline-flex items-center justify-center rounded-md border px-2.5 py-1 text-[10px] font-semibold sm:text-[11px] text-slate-500 ${isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-300 bg-white"}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Projects:
           </h2>
@@ -152,6 +177,16 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             Multiplayer Gaming Platform
           </p>
+          <div className="right mt-0 flex flex-wrap gap-2 sm:gap-3 ml-skills">
+            {["AWS", "PostgreSQL"].map((skill) => (
+              <span
+                key={skill}
+                className={`inline-flex items-center justify-center rounded-md border px-2.5 py-1 text-[10px] font-semibold sm:text-[11px] text-slate-500 ${isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-300 bg-white"}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
           <div className="section-row mt-4 flex w-full max-w-[1400px] items-center justify-between gap-12">
             <p className="right text-xs font-medium sm:text-sm">Heart Disease Predictor</p>
             <p className="dates ml-auto text-xs font-medium text-slate-500 sm:text-sm">
@@ -161,6 +196,16 @@ export default function App() {
           <p className="right text-xs font-medium text-slate-500 sm:text-sm">
             AI-Powered Heart Disease Predictor
           </p>
+          <div className="right mt-0 flex flex-wrap gap-2 sm:gap-3 ml-skills">
+            {["Artifical Neural Network", "Matplotlib", "Seaborn", "EDA", "TensorFlow", "Scikit-learn"].map((skill) => (
+              <span
+                key={skill}
+                className={`inline-flex items-center justify-center rounded-md border px-2.5 py-1 text-[10px] font-semibold sm:text-[11px] text-slate-500 ${isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-300 bg-white"}`}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
           <h2 className="right mt-10 text-lg font-semibold tracking-tight sm:text-xl">
             Skills:
           </h2>

@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Adjust this for mobile/tablet vertical offset; less negative moves content further down */
+  --mobile-offset: -60px;
+}
+
 body {
   background-color: #0b0d11;
   color: #e2e8f0;
@@ -31,7 +36,7 @@ body {
   pointer-events: none;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 1081px) {
   .menu-slide {
     left: 100%;
     margin-left: 0.35rem;
@@ -55,9 +60,9 @@ body {
 
 .shanks {
   position: fixed;
-  width: 1200px;
-  padding-left: 850px;
-  top: -170px;
+  width: 1000px;
+  padding-left: 520px;
+  top: -190px;
 }
 
 .dates {
@@ -95,7 +100,7 @@ body {
   }
 }
 
-@media (max-width: 922px) {
+@media (max-width: 1081px) {
   .everything {
     padding-bottom: 20px;
     padding-left: 0.75rem;
@@ -110,7 +115,7 @@ body {
     gap: 2rem;
     padding: 2rem 1.25rem 3rem;
     width: 100%;
-    transform: translateY(-170px) !important;
+    transform: translateY(var(--mobile-offset)) !important;
   }
 
   .content-block {
@@ -151,7 +156,7 @@ body {
     position: relative;
     top: 0;
     padding-left: 0;
-    width: min(90vw, 420px);
+    width: min(50vw, 300px);
     margin: 0 auto 0.5rem;
     order: -1;
   }
@@ -161,13 +166,13 @@ body {
     height: auto;
   }
 
-  .skills-wrapper {
-    margin: 0 auto !important;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 720px;
-  }
+.skills-wrapper {
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 720px;
+}
 
   .skills-track {
     animation-duration: 8s;
@@ -179,9 +184,30 @@ body {
     text-align: center;
     width: 100%;
   }
+
+  .ml-skills {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .everything {
   padding-right: 20px;
   padding-top: 20px;
+}
+
+@media (min-width: 1081px) {
+  .everything {
+    padding-left: 32px;
+  }
+
+  .find {
+    padding-left: 580px;
+  }
+
+  .skills-wrapper {
+    margin-left: 250px !important;
+    max-width: 1000px;
+    padding-right: 12rem;
+  }
 }
